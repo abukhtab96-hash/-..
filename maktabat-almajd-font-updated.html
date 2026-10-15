@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#145b36">
+<meta name="description" content="مكتبة المجد: فهرس عربي للعلوم الشرعية واللغة العربية والأدب والثقافة">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<title>مكتبة المجد | العلوم الشرعية والعربية</title>
+<style>
+:root{--g:#145b36;--g2:#24764a;--mint:#e8f4eb;--bg:#f6f8f5;--ink:#18251d;--muted:#657168;--line:#e0e7e1;--gold:#c9a75a}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font-family:"Cairo",Tahoma,Arial,sans-serif;line-height:1.75}
+header{color:#fff;background:linear-gradient(135deg,#103d27,#24794a);padding:20px 15px 25px;border-radius:0 0 26px 26px}
+.wrap{max-width:1050px;margin:auto}.headrow{display:flex;align-items:center;justify-content:space-between;gap:12px}.brand{display:flex;align-items:center;gap:10px;font-size:24px;font-weight:800}.mark{display:grid;place-items:center;width:48px;height:48px;border-radius:15px;background:#ffffff20;border:1px solid #ffffff45;font-size:26px}.dev{font-size:11px;color:#d9efe0;text-align:left}
+.hero{margin:22px auto 0}.hero h1{font-size:clamp(25px,5vw,37px);line-height:1.4;margin:0 0 5px}.hero p{margin:0;color:#e0f0e5;font-size:14px;font-weight:500;letter-spacing:.1px}
+.search{display:flex;gap:7px;margin-top:17px;padding:6px;background:#fff;border-radius:14px;box-shadow:0 7px 22px #001b0d22}.search input{flex:1;min-width:0;border:0;outline:0;padding:11px;color:var(--ink);font-size:15px;background:transparent}.btn{border:0;border-radius:10px;padding:10px 14px;font-weight:700;cursor:pointer}.primary{background:var(--g);color:#fff}.light{background:#fff;color:var(--g);border:1px solid var(--line)}
+main{max-width:1050px;margin:auto;padding:19px 14px 35px}.titleline{display:flex;justify-content:space-between;align-items:center;gap:10px;margin:6px 0 12px}.titleline h2{font-size:19px;margin:0;font-weight:800;letter-spacing:-.2px}.muted{color:var(--muted);font-size:12px}
+.categories{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.cat{background:#fff;border:1px solid var(--line);border-radius:15px;padding:13px 12px;text-align:right;cursor:pointer;min-height:98px}.cat.active{background:var(--mint);border-color:var(--g2);box-shadow:inset 0 0 0 1px #24764a20}.cat .emoji{font-size:23px;display:block}.cat strong{display:block;font-size:14px}.cat small{font-size:11px;color:var(--muted)}
+.tools{display:flex;gap:7px;overflow:auto;padding:3px 0 12px}.chip{white-space:nowrap;border:1px solid var(--line);background:#fff;color:var(--ink);border-radius:99px;padding:7px 12px;font-size:12px;cursor:pointer}.chip.active{background:var(--g);border-color:var(--g);color:white}
+.books{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:11px}.book{display:flex;gap:10px;min-width:0;background:#fff;border:1px solid var(--line);border-radius:15px;padding:12px}.cover{flex:0 0 65px;min-height:91px;border-radius:8px;background:linear-gradient(150deg,#2b8050,#103c27);color:white;display:flex;align-items:center;justify-content:center;text-align:center;padding:6px;font-weight:700;font-size:12px;box-shadow:inset 0 0 0 2px #ffffff30}.cover.gold{background:linear-gradient(150deg,#c7a957,#806025)}.cover.blue{background:linear-gradient(150deg,#477e91,#244654)}.cover.brown{background:linear-gradient(150deg,#a8784c,#654126)}.info{min-width:0}.info h3{font-size:14px;line-height:1.65;margin:0 0 3px;font-weight:800;letter-spacing:-.15px}.author{font-size:11px;color:var(--muted);margin:0 0 6px}.tag{display:inline-block;background:var(--mint);color:var(--g);font-size:10px;padding:2px 7px;border-radius:6px}.actions{display:flex;flex-wrap:wrap;gap:5px;margin-top:8px}.actions button,.actions a{font-family:inherit;text-decoration:none;font-size:11px;border:1px solid var(--line);border-radius:8px;padding:5px 7px;background:white;color:var(--g);cursor:pointer}
+.empty{display:none;text-align:center;padding:24px;border:1px dashed var(--line);border-radius:14px;background:#fff;color:var(--muted)}
+.sources{display:grid;grid-template-columns:1fr;gap:10px}.source{background:#fff;border:1px solid var(--line);border-radius:14px;padding:13px}.source strong{display:block}.source p{font-size:12px;color:var(--muted);margin:4px 0 8px}.source a{color:var(--g);font-size:12px;font-weight:700}
+.note{margin-top:18px;padding:13px 14px;border:1px solid #eadcb4;background:#fff9e8;color:#6a5725;border-radius:13px;font-size:12px}
+footer{text-align:center;color:var(--muted);font-size:12px;padding:18px;border-top:1px solid var(--line)}
+@media(min-width:620px){.categories{grid-template-columns:repeat(4,minmax(0,1fr))}.books{grid-template-columns:repeat(3,minmax(0,1fr))}.sources{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media(max-width:370px){.books{grid-template-columns:1fr}.brand{font-size:21px}.dev{max-width:105px}}
+</style>
+</head>
+<body>
+<header><div class="wrap">
+  <div class="headrow"><div class="brand"><span class="mark">📚</span><span>مكتبة المجد</span></div><div class="dev">إعداد وتطوير<br><strong>أبو خطاب الرفاعي</strong></div></div>
+  <div class="hero"><h1>زادُ العلم بين يديك</h1><p>مكتبة عربية تجمع فهارس العلوم الشرعية واللغة والأدب والثقافة.</p>
+  <div class="search"><input id="q" type="search" placeholder="ابحث باسم الكتاب أو المؤلف أو العلم..." aria-label="البحث"><button class="btn primary" id="searchBtn">بحث</button></div></div>
+</div></header>
+<main>
+  <div class="titleline"><h2>أقسام المكتبة</h2><span class="muted">اختر قسمًا للتصفّح</span></div>
+  <div class="categories" id="categories">
+    <button class="cat active" data-cat="الكل"><span class="emoji">📚</span><strong>جميع الكتب</strong><small>كل الفهرس</small></button>
+    <button class="cat" data-cat="قرآن وتفسير"><span class="emoji">📖</span><strong>القرآن والتفسير</strong><small>علوم القرآن والتفسير</small></button>
+    <button class="cat" data-cat="حديث"><span class="emoji">🕌</span><strong>الحديث الشريف</strong><small>متون وشروح ومصطلح</small></button>
+    <button class="cat" data-cat="فقه وعقيدة"><span class="emoji">⚖️</span><strong>الفقه والعقيدة</strong><small>فقه وأصول وعقيدة</small></button>
+    <button class="cat" data-cat="سيرة وتاريخ"><span class="emoji">🏛️</span><strong>السيرة والتاريخ</strong><small>تراجم وتاريخ إسلامي</small></button>
+    <button class="cat" data-cat="لغة ونحو"><span class="emoji">✒️</span><strong>اللغة والنحو</strong><small>نحو وصرف وبلاغة</small></button>
+    <button class="cat" data-cat="أدب وشعر"><span class="emoji">🪶</span><strong>الأدب والشعر</strong><small>أدب عربي ونقد</small></button>
+    <button class="cat" data-cat="ثقافة ومعارف"><span class="emoji">🌍</span><strong>ثقافة ومعارف</strong><small>فكر وعلوم وتاريخ عام</small></button>
+  </div>
+  <div class="titleline" style="margin-top:25px"><h2>فهرس الكتب</h2><span class="muted" id="count"></span></div>
+  <div class="tools" id="filters">
+    <button class="chip active" data-filter="الكل">الكل</button><button class="chip" data-filter="قرآن وتفسير">قرآن وتفسير</button><button class="chip" data-filter="حديث">حديث</button><button class="chip" data-filter="فقه وعقيدة">فقه وعقيدة</button><button class="chip" data-filter="سيرة وتاريخ">سيرة وتاريخ</button><button class="chip" data-filter="لغة ونحو">لغة ونحو</button><button class="chip" data-filter="أدب وشعر">أدب وشعر</button><button class="chip" data-filter="ثقافة ومعارف">ثقافة ومعارف</button>
+  </div>
+  <div class="books" id="books">
+    <article class="book" data-cat="قرآن وتفسير" data-search="القرآن الكريم مصحف تلاوة">
+      <div class="cover gold">القرآن<br>الكريم</div><div class="info"><h3>القرآن الكريم</h3><p class="author">كتاب الله تعالى</p><span class="tag">قرآن وتفسير</span><div class="actions"><button data-detail="القرآن الكريم" data-source="https://quran.com/">مصدر موثوق</button></div></div>
+    </article>
+    <article class="book" data-cat="قرآن وتفسير" data-search="تفسير ابن كثير إسماعيل بن عمر">
+      <div class="cover">تفسير<br>ابن كثير</div><div class="info"><h3>تفسير القرآن العظيم</h3><p class="author">ابن كثير</p><span class="tag">تفسير</span><div class="actions"><button data-searchweb="تفسير ابن كثير">ابحث عن الكتاب</button></div></div>
+    </article>
+    <article class="book" data-cat="قرآن وتفسير" data-search="تفسير الطبري جامع البيان">
+      <div class="cover brown">جامع<br>البيان</div><div class="info"><h3>جامع البيان</h3><p class="author">الطبري</p><span class="tag">تفسير</span><div class="actions"><button data-searchweb="جامع البيان الطبري">ابحث عن الكتاب</button></div></div>
+    </article>
+    <article class="book" data-cat="حديث" data-search="صحيح البخاري محمد بن إسماعيل">
+      <div class="cover gold">صحيح<br>البخاري</div><div class="info"><h3>الجامع الصحيح</h3><p class="author">الإمام البخاري</p><span class="tag">حديث</span><div class="actions"><button data-searchweb="صحيح البخاري">ابحث عن الكتاب</button></div></div>
+    </article>
+    <article class="book" data-cat="حديث" data-search="صحيح مسلم مسلم بن الحجاج">
+      <div class="cover">صحيح<br>مسلم</div><div class="info"><h3>صحيح مسلم</h3><p class="author">مسلم بن الحجاج</p><span class="tag">حديث</span><div class="actions"><button data-searchweb="صحيح مسلم">ابحث عن الكتاب</button></div></div>
+    </article>
+    <article class="book" data-cat="حديث" data-search="رياض الصالحين النووي">
+      <div class="cover blue">رياض<br>الصالحين</div><div class="info"><h3>رياض الصالحين</h3><p class="author">الإمام النووي</p><span class="tag">حديث وأخلاق</span><div class="actions"><button data-searchweb="رياض الصالحين النووي">ابحث عن الكتاب</button></div></div>
+    </article>
+    <article class="book" data-cat="حديث" data-search="الأربعون النووية النووي">
+      <div class="cover">الأربعون<br>النووية</div><div class="info"><h3>الأربعون النووية</h3><p class="author">الإمام النووي</p><span class="tag">حديث</span><div class="actions"><button data-searchweb="الأربعون النووية">ابحث عن الكتاب</button></div></div>
+    </article>
+    <article class="book" data-cat="فقه وعقيدة" data-search="زاد المستقنع الحجاوي فقه">
+      <div class="cover brown">زاد<br>المستقنع</div><div class="info"><h3>زاد المستقنع</h3><p class="author">موسى الحجاوي</p><span class="tag">فقه</span><div class="actions"><button data-searchweb="زاد المستقنع الحجاوي">ابحث عن الكتاب</button></div></div>
+    </article>
+    <article class="book" data-cat="فقه وعقيدة" data-search="بداية المجتهد ابن رشد فقه مقارن">
+      <div class="cover gold">بداية<br>المجتهد</div><div class="info"><h3>بداية المجتهد ونهاية المقتصد</h3><p class="author">ابن رشد</p><span class="tag">فقه مقارن</span><div class="actions"><button data-searchweb="بداية المجتهد ابن رشد">ابحث عن الكتاب</button></div></div>
+    </article>
+    <article class="book" data-cat="فقه وعقيدة" data-search="العقيدة الطحاوية الطحاوي">
+      <div class="cover">العقيدة<br>الطحاوية</div><div class="info"><h3>العقيدة الطحاوية</h3><p class="author">أبو جعفر الطحاوي</p><span class="tag">عقيدة</span><div class="actions"><button data-searchweb="العقيدة الطحاوية">ابحث عن الكتاب</button></div></div>
+    </article>
+    <article class="book" data-cat="فقه وعقيدة" data-search="الأصول من علم الأصول ابن عثيمين أصول الفقه">
+      <div class="cover blue">أصول<br>الفقه</div><div class="info"><h3>الأصول من علم الأصول</h3><p class="author">محمد بن صالح العثيمين</p><span class="tag">أصول الفقه</span><div class="actions"><button data-searchweb="الأصول من علم الأصول">ابحث عن الكتاب</button></div></div>
+    </article>
+    <article class="book" data-cat="سيرة وتاريخ" data-search="الرحيق المختوم صفي الرحمن المباركفوري السيرة">
+      <div class="cover gold">الرحيق<br>المختوم</div><div class="info"><h3>الرحيق المختوم</h3><p class="author">صفي الرحمن المباركفوري</p><span class="tag">السيرة النبوية</span><div class="actions"><button data-searchweb="الرحيق المختوم">ابحث عن الكتاب</button></div></div>
+    </article>
+    <article class="book" data-cat="سيرة وتاريخ" data-search="سيرة ابن هشام السيرة النبوية">
+      <div class="cover">السيرة<br>النبوية</div><div class="info"><h3>السيرة النبوية لابن هشام</h3><p class="author">ابن هشام</p><span class="tag">سيرة</span><div class="actions"><button data-searchweb="سيرة ابن هشام">ابحث عن الكتاب</button></div></div>
+    </article>
+    <article class="book" data-cat="سيرة وتاريخ" data-search="البداية والنهاية ابن كثير تاريخ">
+      <div class="cover brown">البداية<br>والنهاية</div><div class="info"><h3>البداية والنهاية</h3><p class="author">ابن كثير</p><span class="tag">تاريخ</span><div class="actions"><button data-searchweb="البداية والنهاية ابن كثير">ابحث عن الكتاب</button></div></div>
+    </article>
+    <article class="book" data-cat="لغة ونحو" data-search="المقدمة الآجرومية ابن آجروم نحو">
+      <div class="cover">الآجرومية</div><div class="info"><h3>المقدمة الآجرومية</h3><p class="author">ابن آجروم</p><span class="tag">نحو</span><div class="actions"><button data-searchweb="المقدمة الآجرومية">ابحث عن الكتاب</button></div></div>
+    </article>
+    <article class="book" data-cat="لغة ونحو" data-search="ألفية ابن مالك نحو">
+      <div class="cover gold">ألفية<br>ابن مالك</div><div class="info"><h3>ألفية ابن مالك</h3><p class="author">ابن مالك</p><span class="tag">نحو وصرف</span><div class="actions"><button data-searchweb="ألفية ابن مالك">ابحث عن الكتاب</button></div></div>
+    </article>
+    <article class="book" data-cat="لغة ونحو" data-search="قطر الندى وبل الصدى ابن هشام">
+      <div class="cover blue">قطر<br>الندى</div><div class="info"><h3>قطر الندى وبل الصدى</h3><p class="author">ابن هشام الأنصاري</p><span class="tag">نحو</span><div class="actions"><button data-searchweb="قطر الندى وبل الصدى">ابحث عن الكتاب</button></div></div>
+    </article>
+    <article class="book" data-cat="لغة ونحو" data-search="جواهر البلاغة أحمد الهاشمي بلاغة">
+      <div class="cover brown">جواهر<br>البلاغة</div><div class="info"><h3>جواهر البلاغة</h3><p class="author">أحمد الهاشمي</p><span class="tag">بلاغة</span><div class="actions"><button data-searchweb="جواهر البلاغة الهاشمي">ابحث عن الكتاب</button></div></div>
+    </article>
+    <article class="book" data-cat="أدب وشعر" data-search="مقامات الحريري أدب">
+      <div class="cover gold">مقامات<br>الحريري</div><div class="info"><h3>مقامات الحريري</h3><p class="author">الحريري</p><span class="tag">أدب</span><div class="actions"><button data-searchweb="مقامات الحريري">ابحث عن الكتاب</button></div></div>
+    </article>
+    <article class="book" data-cat="أدب وشعر" data-search="ديوان المتنبي شعر">
+      <div class="cover">ديوان<br>المتنبي</div><div class="info"><h3>ديوان المتنبي</h3><p class="author">أبو الطيب المتنبي</p><span class="tag">شعر</span><div class="actions"><button data-searchweb="ديوان المتنبي">ابحث عن الكتاب</button></div></div>
+    </article>
+    <article class="book" data-cat="أدب وشعر" data-search="الأيام طه حسين سيرة أدب">
+      <div class="cover blue">الأيام</div><div class="info"><h3>الأيام</h3><p class="author">طه حسين</p><span class="tag">سيرة وأدب</span><div class="actions"><button data-searchweb="الأيام طه حسين">ابحث عن الكتاب</button></div></div>
+    </article>
+    <article class="book" data-cat="ثقافة ومعارف" data-search="مقدمة ابن خلدون العمران التاريخ">
+      <div class="cover gold">مقدمة<br>ابن خلدون</div><div class="info"><h3>المقدمة</h3><p class="author">ابن خلدون</p><span class="tag">تاريخ وفكر</span><div class="actions"><button data-searchweb="مقدمة ابن خلدون">ابحث عن الكتاب</button></div></div>
+    </article>
+    <article class="book" data-cat="ثقافة ومعارف" data-search="كليلة ودمنة ابن المقفع حكايات">
+      <div class="cover brown">كليلة<br>ودمنة</div><div class="info"><h3>كليلة ودمنة</h3><p class="author">ابن المقفع</p><span class="tag">ثقافة وأدب</span><div class="actions"><button data-searchweb="كليلة ودمنة">ابحث عن الكتاب</button></div></div>
+    </article>
+    <article class="book" data-cat="ثقافة ومعارف" data-search="حي بن يقظان ابن طفيل فلسفة">
+      <div class="cover blue">حي بن<br>يقظان</div><div class="info"><h3>حي بن يقظان</h3><p class="author">ابن طفيل</p><span class="tag">فكر وفلسفة</span><div class="actions"><button data-searchweb="حي بن يقظان ابن طفيل">ابحث عن الكتاب</button></div></div>
+    </article>
+  </div>
+  <div class="empty" id="empty">لا توجد نتائج مطابقة. جرّب كلمة أخرى أو اختر قسمًا مختلفًا.</div>
+  <div class="titleline" style="margin-top:27px"><h2>مصادر للبحث عن الكتب</h2><span class="muted">تحقق من الترخيص قبل النشر</span></div>
+  <div class="sources">
+    <div class="source"><strong>المكتبة الشاملة</strong><p>مصدر معروف للبحث في كتب التراث والعلوم الإسلامية؛ راجع شروط الاستخدام لكل مادة.</p><a href="https://shamela.ws/" target="_blank" rel="noopener">فتح المكتبة الشاملة ↗</a></div>
+    <div class="source"><strong>مكتبة الوقفية</strong><p>فهرس للكتب المصورة والمراجع؛ تختلف شروط إتاحة النسخ حسب الكتاب.</p><a href="https://waqfeya.net/" target="_blank" rel="noopener">فتح مكتبة الوقفية ↗</a></div>
+    <div class="source"><strong>مؤسسة هنداوي</strong><p>كتب عربية أدبية وثقافية متاحة للقراءة وفق شروط المؤسسة.</p><a href="https://www.hindawi.org/" target="_blank" rel="noopener">فتح مؤسسة هنداوي ↗</a></div>
+  </div>
+  <div class="note"><strong>تنبيه مهم:</strong> هذه نسخة أولية وفهرس استرشادي وليست مكتبة تحتوي على كل ملفات الكتب. أزرار «ابحث عن الكتاب» تفتح بحثًا على الويب ولا تعني أن ملفًا قد تم تنزيله أو التحقق منه. قبل رفع أي كتاب داخل التطبيق، تأكد من موثوقية النص وحقوق نشره. بعض الكتب الحديثة محمية بحقوق المؤلف.</div>
+</main>
+<footer>مكتبة المجد • العلوم الشرعية والعربية والثقافية<br>إعداد وتطوير: أبو خطاب الرفاعي</footer>
+<script>
+const q=document.getElementById('q'), cards=[...document.querySelectorAll('.book')], empty=document.getElementById('empty'), count=document.getElementById('count');
+let cat='الكل';
+function update(){const term=q.value.trim().toLocaleLowerCase('ar');let n=0;cards.forEach(c=>{const matchCat=cat==='الكل'||c.dataset.cat===cat;const matchTerm=!term||(c.dataset.search+' '+c.innerText).toLocaleLowerCase('ar').includes(term);const show=matchCat&&matchTerm;c.style.display=show?'flex':'none';if(show)n++});empty.style.display=n?'none':'block';count.textContent='عدد النتائج: '+n;}
+function choose(v){cat=v;document.querySelectorAll('.cat').forEach(b=>b.classList.toggle('active',b.dataset.cat===v));document.querySelectorAll('.chip').forEach(b=>b.classList.toggle('active',b.dataset.filter===v));update();}
+document.querySelectorAll('.cat').forEach(b=>b.addEventListener('click',()=>choose(b.dataset.cat)));
+document.querySelectorAll('.chip').forEach(b=>b.addEventListener('click',()=>choose(b.dataset.filter)));
+q.addEventListener('input',update);document.getElementById('searchBtn').addEventListener('click',update);
+document.querySelectorAll('[data-searchweb]').forEach(b=>b.addEventListener('click',()=>{const term=b.dataset.searchweb;window.open('https://www.google.com/search?q='+encodeURIComponent(term+' قراءة قانونية PDF'),'_blank','noopener');}));
+document.querySelectorAll('[data-source]').forEach(b=>b.addEventListener('click',()=>window.open(b.dataset.source,'_blank','noopener')));
+update();
+</script>
+</body>
+</html>
